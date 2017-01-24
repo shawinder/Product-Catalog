@@ -1,0 +1,23 @@
+﻿.tree ul, .tree ul > ul {
+    list-style-type: none;
+    background: url(images/vline.png) repeat-y;
+    margin: 0;
+    padding: 0;
+}
+
+    .tree ul > ul {
+        margin-left: 20px;
+    }
+
+    .tree ul li {
+        margin: 0;
+        padding: 0 12px;
+    }
+
+.tree a {
+    color: #039 !important;
+}
+
+.tree .badge {
+    background-color:#003b64 !important;
+}

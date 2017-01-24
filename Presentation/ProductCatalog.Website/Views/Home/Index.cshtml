@@ -1,0 +1,64 @@
+﻿@using ProductCatalog.Website.Helpers
+@model PagedList.IPagedList<ProductCatalog.Data.Models.Product>
+@using PagedList.Mvc
+
+@{
+    ViewBag.Title = "Index";
+}
+
+@section styles{
+    <link href="~/Content/treemenu.css" rel="stylesheet">
+}
+<hr />
+<div class="row">
+    <div class="col-md-3">
+        @Html.CategoryTree()
+    </div>
+    <div class="col-md-9">
+        <table class="table table-striped">
+            <tr>
+                <th>
+                    ProductSku
+                </th>
+                <th>
+                    ProductName
+                </th>
+                <th>
+                    ProductPrice
+                </th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ProductSku)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ProductName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ProductPrice)
+                    </td>
+                </tr>
+            }
+
+        </table>
+
+        <span style="font-weight:bold;">Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount</span>
+
+        @{
+            if (@Request["cat"] != null)
+            {
+                var cat = Request["cat"];
+
+                @Html.PagedListPager(Model, page => Url.Action("", new { page, cat = cat, sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter }));
+            }
+            else
+            {
+                @Html.PagedListPager(Model, page => Url.Action("", new { page, sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter }));
+            }
+
+        }
+    </div>
+</div>

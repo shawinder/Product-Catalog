@@ -1,0 +1,15 @@
+C:\Work\ProductCatalog\ProductCatalog.Core\bin\Debug\ProductCatalog.Core.dll
+C:\Work\ProductCatalog\ProductCatalog.Core\bin\Debug\ProductCatalog.Core.pdb
+C:\Work\ProductCatalog\ProductCatalog.Core\obj\Debug\ProductCatalog.Core.dll
+C:\Work\ProductCatalog\ProductCatalog.Core\obj\Debug\ProductCatalog.Core.pdb
+C:\Work\ProductCatalog\ProductCatalog.Core\bin\Debug\AutoMapper.dll
+C:\Work\ProductCatalog\ProductCatalog.Core\bin\Debug\AutoMapper.xml
+C:\Work\ProductCatalog\ProductCatalog.Core\obj\Debug\ProductCatalog.Core.csprojResolveAssemblyReference.cache
+C:\Work\ProductCatalog\ProductCatalog.Core\bin\Debug\App_Data\ProductCatalog.mdf
+C:\Work\ProductCatalog\ProductCatalog.Core\bin\Debug\App_Data\ProductCatalog_log.ldf
+C:\Work\ProductCatalog\ProductCatalog.Core\bin\Debug\ProductCatalog.Data.dll
+C:\Work\ProductCatalog\ProductCatalog.Core\bin\Debug\EntityFramework.dll
+C:\Work\ProductCatalog\ProductCatalog.Core\bin\Debug\Elmah.dll
+C:\Work\ProductCatalog\ProductCatalog.Core\bin\Debug\System.Data.SqlServerCe.dll
+C:\Work\ProductCatalog\ProductCatalog.Core\bin\Debug\ProductCatalog.Data.pdb
+C:\Work\ProductCatalog\ProductCatalog.Core\bin\Debug\EntityFramework.xml

@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="ProductCatalog.Service.Context.CatalogService" %>
